@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh 'java -version'
+        git(url: 'https://github.com/sanchigoyal/jenkins-pipeline-demo.git', branch: 'master')
       }
     }
   }
