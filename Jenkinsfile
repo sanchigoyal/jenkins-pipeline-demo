@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout') {
+    stage('Example') {
       steps {
-        sh 'java -version'
+        echo "Hello I am a complain boy"
       }
     }
   }
